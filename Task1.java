@@ -4,11 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-/*Оголосити колекцію myCollection з 10 цілих чисел і заповнити її (з консолі або випадкового).
-Знайдіть і збережіть у списку newCollection всі позиції елемента більше 5 у колекції. Роздрукувати новуколекцію
-Видалити з колекції елементи myCollection, які більше 20. Друк результату
-Вставити елементи 1, -3, -4 у положення 2, 8, 5. Результат друку у форматі: "позиція - xxx, значення елемента - xxx"
-Сортування та друк колекції*/
 public class Task1 {
     public static void main(String[] args) {
 

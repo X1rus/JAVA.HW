@@ -23,7 +23,7 @@ ArrayList<Student> students=new ArrayList<>();
             System.out.println(st);
 
         System.out.println("\n");
-        printStudent(students,1);
+        printStudent(students,2);
     }
 }
 class Student

@@ -1,7 +1,9 @@
 package Video7;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class HW2 {
     public static void main(String[] args) {
@@ -18,23 +20,17 @@ public class HW2 {
         personMap.put("Kononov", "Ivan");
         personMap.put("Noname", "Pavlo");
         System.out.println(personMap);
-        System.out.println(IsTwoPerson(personMap, "Ivan"));
+        System.out.println(IsTwoPerson(personMap));
 
         System.out.println(DelPerson(personMap, "Pavlo"));
 
 
     }
 
-    public static boolean IsTwoPerson(HashMap<String, String> name, String findeName) {
-        int iter = 0;
-        for (Map.Entry<String, String> i : name.entrySet()) {
-            if (name.containsValue(findeName))
-                iter++;
-            if (iter >= 2) {
-                return true;
-            }
-        }
-        return false;
+    public static boolean IsTwoPerson(HashMap<String, String> name) {
+        Set<String> temporary = new HashSet<String>();
+        temporary.addAll(name.values());
+        return name.size() == temporary.size() ?false : true ;
     }
 
     public static boolean DelPerson(HashMap<String, String> name, String delName) {
@@ -42,7 +38,7 @@ public class HW2 {
         name.values().remove(delName);
         System.out.println(name);
         return true;
-    }
+}
 
 }
 
