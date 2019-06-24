@@ -41,7 +41,7 @@ class Plant {
     }
 
     enum Type {
-        rose, lilac, dracena
+        rose, lilac, orchidea
     }
 
     private static Color Colored(String color) throws MyException {
@@ -65,7 +65,7 @@ class Plant {
             case "lilac":
                 return Type.lilac;
             case "dracena":
-                return Type.dracena;
+                return Type.orchidea;
 
             default:
                 throw new MyException("Wrong type");
