@@ -64,7 +64,7 @@ class Plant {
                 return Type.rose;
             case "lilac":
                 return Type.lilac;
-            case "dracena":
+            case "orchidea":
                 return Type.orchidea;
 
             default:
