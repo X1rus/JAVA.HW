@@ -20,13 +20,21 @@ public class HW5 {
         }
         System.out.println("ordered by the field year.");
 
-        int tmp;
+        Car tmp=new Car();
         for (int i = 0; i < cars.length - 1; i++) {
             for (int j = i + 1; j < cars.length; j++) {
                 if (cars[i].Year > cars[j].Year) {
-                    tmp = cars[i].Year;
+                    tmp.Year = cars[i].Year;
+                    tmp.carName=cars[i].carName;
+                    tmp.capacity=cars[i].capacity;
+
                     cars[i].Year = cars[j].Year;
-                    cars[j].Year = tmp;
+                    cars[i].carName=cars[j].carName;
+                    cars[i].capacity=cars[j].capacity;
+
+                    cars[j].Year = tmp.Year;
+                    cars[j].carName=tmp.carName;
+                    cars[j].capacity=cars[j].capacity;
                 }
             }
         }
@@ -46,5 +54,8 @@ class Car
         this.carName = carName;
         Year = year;
         this.capacity = capacity;
+    }
+
+    public Car() {
     }
 }
