@@ -1,5 +1,7 @@
 package Video5;
-
+/*Enter 10 integer numbers.
+ Calculate the sum of first 5 elements if they are positive
+ or product of last 5 element in the other case.*/
 import java.util.Scanner;
 
 public class HW2 {

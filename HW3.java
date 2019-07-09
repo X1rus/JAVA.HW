@@ -1,5 +1,8 @@
 package Video5;
-
+/*Enter 5 integer numbers. Find
+position of second positive number;
+minimum and its position in the array.
+*/
 import java.util.Scanner;
 
 public class HW3 {

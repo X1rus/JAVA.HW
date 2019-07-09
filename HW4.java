@@ -1,5 +1,7 @@
 package Video5;
-
+/*Organize entering integers until the first negative number.
+Count the product of all entered even numbers.
+ */
 import java.util.Scanner;
 
 public class HW4 {

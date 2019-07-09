@@ -1,5 +1,8 @@
 package Video5;
-
+/*Ask user to enter the number of month.
+ Read the value and write the amount of days in this month
+ (create array with amount days of each month).
+ */
 import java.util.Scanner;
 
 public class HW1 {
@@ -11,3 +14,4 @@ public class HW1 {
         System.out.println("days in this month: "+days[n]);
     }
 }
+

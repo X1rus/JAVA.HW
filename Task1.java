@@ -1,7 +1,10 @@
 package Video5;
-
-import java.lang.reflect.Array;
-
+/*Create an array of ten integers. Display 
+the biggest of these numbers;
+the sum of positive numbers in the array;
+the amount of negative numbers in the array.
+    What values there are more: negative or positive?
+*/
 public class Task1 {
     public static void main(String[] args) {
         int arr[] = new int[]{-1, -2, -3, -4, -5, 5, 2, 3, 4, 1};
